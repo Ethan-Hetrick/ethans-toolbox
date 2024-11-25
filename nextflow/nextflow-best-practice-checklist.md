@@ -79,6 +79,7 @@ Nextflow execution docs: https://www.nextflow.io/docs/latest/executor.html
 ---
 
 ## Code Quality
+- [ ] **Syntax**: Adhere to up-to-date Nextflow DSL2 syntax: https://www.nextflow.io/docs/latest/reference/syntax.html#syntax-page
 - [ ] **Modularization**: Each process should be contained in it's own module file (`projectDir/modules` in nf-core pipeline structure). Workflows and subworkflows should be staged to reduce redundancy and enhance readability of the code base -- this task is less straight-forward
 - [ ] **Flexibility**: Processes and workflows should be designed with flexibility in mind (i.e. the least hard-coded solution). For example, you want to design a process to only use the most basic command-line options, while allowing the user to customize the parameters at runtime. Multiple pipeline tracks can be designed to work with a variety of input data and desired outputs
 - [ ] **Dataflow programming model**: Appropriately use channels in order to control the I/O of data for processes. Use queue channels when a series of values (e.g. samples) are needed and a value channel for static values (e.g. a reference genome). A process should never directly read/write to the output directory. All I/O should be controlled with channels which reads and write to the **work** directory. This will also ensure proper functionality of the `-resume` function
