@@ -9,6 +9,7 @@ A checklist to ensure adherence to best practices when working with Nextflow pip
 2. [Execution](#execution)
 3. [Debugging](#debugging)
 4. [Code Quality](#code-quality)
+5. [Nf-core pipelines](#nf-core-pipelines)
 
 ---
 
