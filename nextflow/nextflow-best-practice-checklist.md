@@ -29,7 +29,7 @@ A checklist to ensure adherence to best practices when working with Nextflow pip
     - Use the tracing function in Nextflow to generate a resource usage table and adjust resource allocation as needed. Use `-with-trace` at runtime
     - Use a sparing amount of resources for the head Nextflow job that runs the JVM. Usually `16-32G` and 1-4 CPUs is plenty, and make sure to give it enough time to run all the way through (this will vary depending on use-case)
 
-Link to Nextflow docs: https://www.nextflow.io/docs/latest/config.html
+Nextflow configuration docs: https://www.nextflow.io/docs/latest/config.html
 
 ---
 
@@ -37,6 +37,8 @@ Link to Nextflow docs: https://www.nextflow.io/docs/latest/config.html
 - [ ] **Execution configs**: Utilize config files and profiles specific to your execution platform at runtime. `-c` and `-profile` on CLI
 - [ ] **Resuming runs**: Use `-resume` at runtime to utilized cached results. This is very helpful when actively developing a pipeline or when pipelines fail half-way
 - [ ] **Configuring the head job**: Use a sparing amount of resources for the head Nextflow job that runs the JVM. Usually `16-32G` and 1-4 CPUs is plenty, and make sure to give it enough time to run all the way through (this will vary depending on use-case)
+
+Nextflow execution docs: https://www.nextflow.io/docs/latest/executor.html
 
 ---
 
