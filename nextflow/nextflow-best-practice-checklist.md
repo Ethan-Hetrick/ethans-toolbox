@@ -59,7 +59,7 @@ Nextflow execution docs: https://www.nextflow.io/docs/latest/executor.html
     4. Check `.command.log`, are there any more detail about your error message?
     5. Check all inputs/outputs for the process, are they correctly formatted? Do they have adequate permissions?
 - [ ] **Clearing caches**: If nothing else is working, try detelting your Nextflow and/or nf-core caches and work directories. Potential locations:
-    - `~/.nextflow` or `$NCF_HOME` - Nextflow packages, plugins, etc. e.g. `rm -rf ~/.nextflow/*`
+    - `~/.nextflow` or `$NXF_HOME` - Nextflow packages, plugins, etc. e.g. `rm -rf ~/.nextflow/*`
     - `~/.cache/nfcore` - Nf-core packages, pipelines, etc. e.g. `rm -rf ~/.cache/nfcore`
     - `$NXF_WORK` or `./work` - Cached pipeline results. e.g. `nextflow clean -f` or `rm -rf ./work`
     - `$NXF_TEMP` or `$TMP` or `$TMPDIR` or `-Djava.io.tmpdir` - Clear out general temporary files. e.g. `rm -rf ${NXF_TEMP}/*`
