@@ -108,6 +108,6 @@ Nextflow execution docs: https://www.nextflow.io/docs/latest/executor.html
 
 ## Disclaimer
 
-The items on the list are derived solely from my personal experience as a Nextflow developer and do not reflect the standards set by Nextflow, nf-core, or any of my personal affiliations. 
+This document is derived solely from my personal experience as a Nextflow developer and do not reflect the standards set by Nextflow, nf-core, or any of my personal affiliations, nor was generative AI used.
 
 ---
