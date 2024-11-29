@@ -1,6 +1,10 @@
-# Ethan's Nextflow Best Practices Checklist
+# Nextflow Developer’s Heuristic Checklist
 
-A checklist to ensure adherence to best practices when working with Nextflow pipelines.
+Written by Ethan Hetrick
+
+## Description
+
+This document contains heuristic checklists designed to assist with common tasks that Nextflow developers encounter regularly.
 
 ---
 
@@ -58,7 +62,7 @@ Nextflow execution docs: https://www.nextflow.io/docs/latest/executor.html
     3. Check the top of `.command.run`, did Nextflow execute the job correctly?
     4. Check `.command.log`, are there any more detail about your error message?
     5. Check all inputs/outputs for the process, are they correctly formatted? Do they have adequate permissions?
-- [ ] **Clearing caches**: If nothing else is working, try detelting your Nextflow and/or nf-core caches and work directories. Potential locations:
+- [ ] **Clearing caches**: If nothing else is working, try deleting your Nextflow and/or nf-core caches and work directories. Potential locations:
     - `~/.nextflow` or `$NXF_HOME` - Nextflow packages, plugins, etc. e.g. `rm -rf ~/.nextflow/*`
     - `~/.cache/nfcore` - Nf-core packages, pipelines, etc. e.g. `rm -rf ~/.cache/nfcore`
     - `$NXF_WORK` or `./work` - Cached pipeline results. e.g. `nextflow clean -f` or `rm -rf ./work`
@@ -97,5 +101,9 @@ Nextflow execution docs: https://www.nextflow.io/docs/latest/executor.html
 ## Nf-core pipelines
 - [ ] **Linting**: Use `nf-core lint` (might now be `nf-core pipelines lint` after updates) to perform quality checks on your pipeline. `nf-core schema lint` can be used to just validate your schema
 - [ ] **To-do's**: Check the "TO-DO" lines in the nf-core pipeline template for suggested best-practices
- 
+
+## Disclaimer
+
+The items on the list are derived solely from my personal experience as a Nextflow developer and do not reflect the standards set by Nextflow, nf-core, or any of my personal affiliations. 
+
 ---
