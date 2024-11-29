@@ -98,9 +98,13 @@ Nextflow execution docs: https://www.nextflow.io/docs/latest/executor.html
     - Validate inputs
     - Use consistent, easy-to-read formatting. The `prettier` application is good at automating this task
 
+---
+
 ## Nf-core pipelines
 - [ ] **Linting**: Use `nf-core lint` (might now be `nf-core pipelines lint` after updates) to perform quality checks on your pipeline. `nf-core schema lint` can be used to just validate your schema
 - [ ] **To-do's**: Check the "TO-DO" lines in the nf-core pipeline template for suggested best-practices
+
+---
 
 ## Disclaimer
 
