@@ -21,7 +21,7 @@ A checklist to ensure adherence to best practices when working with Nextflow pip
 - [ ] **Process-specific configurations**: If single processes need their own configuration, this should be confined to the `withName` scope (`modules.config` in the nf-core pipeline structure)
 - [ ] **Naming profiles**: Don't name two profiles the same thing to avoid profile collisions. Try to avoid using the same name as nf-core institutional config profiles (see https://nf-co.re/configs)
 - [ ] **Flexible error resolution**: It should be configured where if a process errors out that the process is re-submitted with more resources for appropriate error messages. See `retry` scope in Nextflow docs
-- [ ] **Resource allocation**: Allocate an appropriate amount of resources for every process. Remember, flexible label definitions will resolve one-offs from erroring out. General rules:
+- [ ] **Resource allocation**: Allocate an appropriate amount of resources for every process. Remember, flexible label definitions will resolve one-offs from erroring out. General advice:
     - Only request the amount of cores/threads/processors as the process actually uses
     - Request 10-20% more memory/RAM than the process needs, no more
     - Request 10-20% more time than the process will need to run, no more
@@ -35,7 +35,7 @@ Nextflow configuration docs: https://www.nextflow.io/docs/latest/config.html
 
 ## Execution
 - [ ] **Execution configs**: Utilize config files and profiles specific to your execution platform at runtime. `-c` and `-profile` on CLI
-- [ ] **Resuming runs**: Use `-resume` at runtime to utilized cached results. This is very helpful when actively developing a pipeline or when pipelines fail half-way
+- [ ] **Resuming runs**: Use `-resume` at runtime to utilize cached results. This is very helpful when actively developing a pipeline or when pipelines fail half-way
 - [ ] **Configuring the head job**: Use a sparing amount of resources for the head Nextflow job that runs the JVM. Usually `16-32G` and 1-4 CPUs is plenty, and make sure to give it enough time to run all the way through (this will vary depending on use-case)
 
 Nextflow execution docs: https://www.nextflow.io/docs/latest/executor.html
