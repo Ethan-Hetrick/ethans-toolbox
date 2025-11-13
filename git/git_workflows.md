@@ -19,4 +19,10 @@ git checkout -b <branch> origin/<branch>
 git status
 ```
 
+## Reset to a different commit
+
+```bash
+git reset --hard <commit_hash>
+```
+
 ## GitHub
