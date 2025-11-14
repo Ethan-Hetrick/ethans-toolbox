@@ -38,4 +38,14 @@ git checkout <branch>
 git push --set-upstream origin <branch>
 ```
 
+## Debugging
+
+```bash
+git branch -v
+git status -v
+git remote -v
+git branch --all --v
+git config --list
+```
+
 ## GitHub
