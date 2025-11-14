@@ -25,4 +25,17 @@ git status
 git reset --hard <commit_hash>
 ```
 
+## Create a development branch from a previous commit
+
+```bash
+# Create a local branch from a commit hash
+git branch <branch> <hash>
+
+# Switch to the new branch
+git checkout <branch>
+
+# Push branch to remote
+git push --set-upstream origin dev/ethan
+```
+
 ## GitHub
