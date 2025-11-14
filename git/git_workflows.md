@@ -35,7 +35,7 @@ git branch <branch> <hash>
 git checkout <branch>
 
 # Push branch to remote
-git push --set-upstream origin dev/ethan
+git push --set-upstream origin <branch>
 ```
 
 ## GitHub
