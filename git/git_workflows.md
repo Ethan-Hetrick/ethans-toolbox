@@ -19,6 +19,25 @@ git checkout -b <branch> origin/<branch>
 git status
 ```
 
+### Copy a development branch to a new branch
+
+```bash
+# Clone repo
+git clone <URL>.git
+
+# Fetch all
+git fetch --all
+
+# Create local branch from dev branch
+git checkout -b <dev/new branch> <remotes/origin/dev/branch>
+
+# Push new branch
+git push -u origin <dev/branch>
+
+# Set upstream for tracking
+git branch --set-upstream-to=<origin/dev/branch>
+```
+
 ## Reset to a different commit
 
 ```bash
