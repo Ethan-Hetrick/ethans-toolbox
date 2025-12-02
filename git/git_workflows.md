@@ -57,6 +57,16 @@ git checkout <branch>
 git push --set-upstream origin <branch>
 ```
 
+## Remove a file or directory from commit without deleting it locally
+
+```
+# Add the file to .gititignore
+echo "<path>" >> ,gitignore
+
+# Remove it from git index
+git rm -r --cached <path>
+```
+
 ## Debugging
 
 ```bash
