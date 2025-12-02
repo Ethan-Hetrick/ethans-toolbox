@@ -61,7 +61,7 @@ git push --set-upstream origin <branch>
 
 ```
 # Add the file to .gititignore
-echo "<path>" >> ,gitignore
+echo "<path>" >> .gitignore
 
 # Remove it from git index
 git rm -r --cached <path>
