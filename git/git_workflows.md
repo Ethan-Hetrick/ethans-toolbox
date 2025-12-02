@@ -59,7 +59,7 @@ git push --set-upstream origin <branch>
 
 ## Remove a file or directory from commit without deleting it locally
 
-```
+```bash
 # Add the file to .gititignore
 echo "<path>" >> .gitignore
 
