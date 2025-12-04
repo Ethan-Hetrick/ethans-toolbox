@@ -1,6 +1,6 @@
 ### Marking different sorts of duplicate reads using samtools markdup
 
-This is an example using a minimap2 alignment. The read header string matching is the difficult part. This example is for a read header that looks like `@M04906:104:000000000-M3NG7:1:1101:15637:1926 1:N:0:12`
+This is an example using a minimap2 alignment. The read header string matching is the difficult part. This example is for a read header that looks like `@M04906:104:000000000-M3NG7:1:1101:15637:1926 1:N:0:12`.
 
 ```bash
 samtools markdup \
@@ -15,3 +15,5 @@ samtools markdup \
   1-3101721458_S5_L001_sorted.bam \  # input sorted BAM
   1-3101721458_S5_L001.bam # output cleaned BAM
 ```
+
+> Note: Pixel distance here is for MiSeq/HiSeq, it depends on the sequencer
