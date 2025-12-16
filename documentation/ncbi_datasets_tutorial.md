@@ -4,7 +4,14 @@ Below is an example of how to use the NCBI datasets tool to pull a reference dat
 
 ```bash
 # Download enterobacteriacea reference genomes
-datasets download genome taxon "Enterobacteriaceae" --dehydrated --filename enterobacteriaceae.zip --assembly-version 'latest' --api-key "${NCBI_API_KEY}" --mag "exclude" --exclude-atypical --assembly-source "RefSeq" --assembly-level "complete"
+datasets download genome taxon "Enterobacteriaceae" \
+    --dehydrated \
+    --filename enterobacteriaceae.zip \
+    --assembly-version 'latest' \
+    --api-key "${NCBI_API_KEY}" \
+    --mag "exclude" --exclude-atypical \
+    --assembly-source "RefSeq" \
+    --assembly-level "complete"
 
 # Unzip
 unzip enterobacteriaceae.zip
@@ -13,7 +20,12 @@ unzip enterobacteriaceae.zip
 datasets rehydrate --api-key "${NCBI_API_KEY}" --directory ./ --max-workers 24
 
 # Download genome summary
-datasets summary genome taxon "Enterobacteriaceae" --assembly-version 'latest' --api-key "${NCBI_API_KEY}" --mag "exclude" --exclude-atypical --assembly-source "RefSeq" --assembly-level "complete" > enterobacteriaceae_summary.json
+datasets summary genome taxon "Enterobacteriaceae" \
+    --assembly-version 'latest' \
+    --api-key "${NCBI_API_KEY}" \
+    --mag "exclude" --exclude-atypical \
+    --assembly-source "RefSeq" \
+    --assembly-level "complete" > enterobacteriaceae_summary.json
 
 # Generate summary using dataformat
 dataformat tsv genome --package ./enterobacteriaceae.zip > enterobacteriaceae_summary.tsv
