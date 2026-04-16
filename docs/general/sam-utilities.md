@@ -1,6 +1,6 @@
 # SAM Utilities
 
-This section documents the small helper scripts in the repo for inspecting SAM files and working through alignment metadata.
+This page documents the small helper scripts in the repo for inspecting SAM files and working through alignment metadata.
 
 ## Included scripts
 

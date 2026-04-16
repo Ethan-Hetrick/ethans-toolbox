@@ -4,13 +4,11 @@ This site collects the notes, job aids, and small utilities in this repo into a 
 
 ## Sections
 
-- `General`: small reference pages and command-line notes
-- `Helpful Functions`: reusable shell helpers and quick snippets
-- `Git`: workflow reminders and formatting troubleshooting
+- `One-liners`: reusable shell helpers and quick command snippets
+- `HPC`: cluster-focused tools and terminal workflow notes
 - `Nextflow`: development checklists and contribution notes
 - `Containers`: Singularity-based setup guides
-- `HPC`: cluster-specific helpers like `qacct2csv`
-- `SAM`: quick references for SAM-related scripts and examples
+- `General`: broader reference material that does not need its own section
 
 ## Local Preview
 

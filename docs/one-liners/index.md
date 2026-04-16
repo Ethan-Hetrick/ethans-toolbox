@@ -1,4 +1,4 @@
-# Helpful Functions
+# One-liners
 
 Small shell helpers and command snippets that are handy enough to keep around.
 

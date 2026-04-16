@@ -13,22 +13,21 @@ markdown_extensions:
       permalink: true
 nav:
   - Home: index.md
+  - One-liners:
+      - Shell Helpers and Snippets: one-liners/index.md
+  - HPC:
+      - qacct2csv: hpc/qacct2csv.md
+      - tmux Cheatsheet: hpc/tmux-cheatsheet.md
   - General:
       - File Conversion: general/file-conversion.md
+      - Git Workflows: general/git-workflows.md
+      - Pre-commit and Whitespace: general/fix-whitespaces.md
       - NCBI Datasets: general/ncbi-datasets.md
-      - tmux Cheatsheet: general/tmux-cheatsheet.md
-  - Helpful Functions: helpful-functions/index.md
-  - Git:
-      - Workflows: git/workflows.md
-      - Pre-commit and Whitespace: git/fix-whitespaces.md
+      - SAM Utilities: general/sam-utilities.md
+      - SAM markdup Notes: general/sam-markdups.md
   - Nextflow:
       - Best Practices: nextflow/best-practices.md
       - Contributing to nf-core: nextflow/contribute-to-nfcore.md
   - Containers:
       - Run RStudio on HPC: containers/run-rstudio-on-hpc.md
       - Singularity from Conda: containers/singularity-from-conda.md
-  - HPC:
-      - qacct2csv: hpc/qacct2csv.md
-  - SAM:
-      - Overview: sam/index.md
-      - markdup Notes: sam/markdups.md
