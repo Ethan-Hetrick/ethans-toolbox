@@ -1,4 +1,4 @@
-# Basic tmux commands
+# tmux Cheatsheet
 
 | command                               | description                    |
 | ------------------------------------- | ------------------------------ |
@@ -12,7 +12,7 @@
 | `Ctrl+b d`                            | detach (keep session running)  |
 | `exit`                                | end session (from inside tmux) |
 
-# Window/pane management
+## Window and Pane Management
 
 | command                   | description      |
 | ------------------------- | ---------------- |

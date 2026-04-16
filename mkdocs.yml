@@ -1,0 +1,34 @@
+site_name: Ethan's Toolbox
+site_description: Practical bioinformatics, HPC, and workflow job aids
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+nav:
+  - Home: index.md
+  - General:
+      - File Conversion: general/file-conversion.md
+      - NCBI Datasets: general/ncbi-datasets.md
+      - tmux Cheatsheet: general/tmux-cheatsheet.md
+  - Helpful Functions: helpful-functions/index.md
+  - Git:
+      - Workflows: git/workflows.md
+      - Pre-commit and Whitespace: git/fix-whitespaces.md
+  - Nextflow:
+      - Best Practices: nextflow/best-practices.md
+      - Contributing to nf-core: nextflow/contribute-to-nfcore.md
+  - Containers:
+      - Run RStudio on HPC: containers/run-rstudio-on-hpc.md
+      - Singularity from Conda: containers/singularity-from-conda.md
+  - HPC:
+      - qacct2csv: hpc/qacct2csv.md
+  - SAM:
+      - Overview: sam/index.md
+      - markdup Notes: sam/markdups.md

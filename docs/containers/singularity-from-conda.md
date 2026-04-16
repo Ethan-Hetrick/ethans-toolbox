@@ -1,6 +1,6 @@
 # How to create a Singularity image from a Conda environment
 
-Sometimes it's helpful to containerize a working Conda environment for portability and reproducibility, especially when there are no pre-existing public containers available. Since these are sometimes tricky to set-up, I have created the following document.
+Sometimes it's helpful to containerize a working Conda environment for portability and reproducibility, especially when there are no pre-existing public containers available. Since these are sometimes tricky to set up, I have created the following document.
 
 ## Step 1: Create a conda environment
 
@@ -77,12 +77,12 @@ From: continuumio/miniconda3:24.5.0-0
 ```plaintext
 %files
     <optional add directories, files or binaries>
-    <environment>.yml /opt/<enviornment>.yml
+    <environment>.yml /opt/<environment>.yml
 ```
 
 - %files: Copies files or directories from the host system into the container.
-    - The first line copies the entire neissflow directory from a specified path on the host to /opt/neissflow in the container.
-    - The second line copies a YAML file, <environment>.yml, which is used to create the Conda environmesnt, to /opt/<environment>.yml inside the container.
+    - The first line copies any optional files or directories from the host into `/opt/` in the container.
+    - The second line copies a YAML file, `<environment>.yml`, which is used to create the Conda environment, to `/opt/<environment>.yml` inside the container.
 
 6. `%post`
 

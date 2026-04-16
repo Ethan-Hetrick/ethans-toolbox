@@ -1,4 +1,4 @@
-# Using Singularity to run Rstudio from HPC
+# Using Singularity to Run RStudio on HPC
 
 Below are general instructions for running RStudio Server inside a Singularity container on an HPC system and accessing it from your local browser through SSH port forwarding.
 
