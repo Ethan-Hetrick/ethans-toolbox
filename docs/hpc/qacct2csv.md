@@ -5,7 +5,7 @@
 Script path:
 
 ```text
-HPC/qacct2csv.py
+scripts/hpc/qacct2csv.py
 ```
 
 ## Usage
@@ -13,10 +13,10 @@ HPC/qacct2csv.py
 ```bash
 # Generate a qacct log and convert it to CSV
 qacct -j <job_name> -d <days> -o <owner> > qacct.log
-python HPC/qacct2csv.py --input qacct.log --output qacct.log.csv
+python scripts/hpc/qacct2csv.py --input qacct.log --output qacct.log.csv
 
 # Or read from stdin and write to stdout
-qacct | python HPC/qacct2csv.py > qacct.log.csv
+qacct | python scripts/hpc/qacct2csv.py > qacct.log.csv
 ```
 
 ## Help Menu
@@ -35,5 +35,5 @@ options:
 ## Conda Environment
 
 ```bash
-conda env create -n qacct2csv_env -f HPC/qacct2csv.yml
+conda env create -n qacct2csv_env -f scripts/hpc/qacct2csv.yml
 ```

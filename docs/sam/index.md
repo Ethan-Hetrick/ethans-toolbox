@@ -4,20 +4,20 @@ This section documents the small helper scripts in the repo for inspecting SAM f
 
 ## Included scripts
 
-### `sam/flags.py`
+### `scripts/sam/flags.py`
 
 Summarizes SAM flag counts and prints them as a table.
 
 ```bash
-python sam/flags.py -a alignments.sam
+python scripts/sam/flags.py -a alignments.sam
 ```
 
-### `sam/header.py`
+### `scripts/sam/header.py`
 
 Parses SAM header lines and prints a table with tag descriptions.
 
 ```bash
-python sam/header.py -a alignments.sam
+python scripts/sam/header.py -a alignments.sam
 ```
 
 ## Related note

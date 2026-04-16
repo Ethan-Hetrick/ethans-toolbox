@@ -12,4 +12,4 @@ mkdocs serve
 mkdocs build --strict
 ```
 
-Utility scripts remain in the repo root under directories such as `HPC/` and `sam/`.
+Utility scripts live under `scripts/`, grouped by category such as `scripts/hpc/` and `scripts/sam/`.

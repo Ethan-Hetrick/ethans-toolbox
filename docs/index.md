@@ -22,8 +22,8 @@ mkdocs build --strict
 
 ## Repo Notes
 
-The documentation pages now live under `docs/`. The Python helper scripts still live in their original source directories:
+The documentation pages now live under `docs/`. The helper scripts live under `scripts/`:
 
-- `HPC/qacct2csv.py`
-- `sam/flags.py`
-- `sam/header.py`
+- `scripts/hpc/qacct2csv.py`
+- `scripts/sam/flags.py`
+- `scripts/sam/header.py`
