@@ -1,5 +1,8 @@
 site_name: Ethan's Toolbox
 site_description: Practical bioinformatics, HPC, and workflow job aids
+site_url: https://ethan-hetrick.github.io/ethans-toolbox/
+repo_url: https://github.com/Ethan-Hetrick/ethans-toolbox
+repo_name: Ethan-Hetrick/ethans-toolbox
 theme:
   name: material
   features:
