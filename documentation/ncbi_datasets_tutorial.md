@@ -45,4 +45,8 @@ while read -r fasta; do name=$(echo "$fasta" | cut -f12 -d'/'); taxID=$(rg $name
 
 # Add to kraken database
 fasta in ./*krakhead*; do kraken2-build --add-to-library $fasta --db krakendb; done
+
+# Add taxonomy database and build
+kraken2-build --download-taxonomy --db krakendb
+kraken2-build --build --db krakendb
 ```
