@@ -33,3 +33,16 @@ dataformat tsv genome --package ./enterobacteriaceae.zip > enterobacteriaceae_su
 # Create sample list
 find $(realpath ncbi_dataset/) -name "*.fna" -type f > genome_list.txt
 ```
+
+## Make into a kraken database
+
+```bash
+# Extract Taxonomy IDs from assembly report output by NCBI datasets
+jq -r '[.accession, .organism.taxId] | @tsv' assembly_data_report.jsonl > taxIDs.txt
+
+# Add kraken header
+while read -r fasta; do name=$(echo "$fasta" | cut -f12 -d'/'); taxID=$(rg $name taxIDs.txt | cut -f2); sed "s#>#>|kraken:taxid|${taxID}|#g" $fasta > ${name}.krakhead.fasta; done < genome-paths.txt
+
+# Add to kraken database
+fasta in ./*krakhead*; do kraken2-build --add-to-library $fasta --db krakendb; done
+```
